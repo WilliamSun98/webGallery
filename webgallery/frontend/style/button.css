@@ -1,0 +1,59 @@
+#toggle_button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin:auto;
+	height:40px;
+	font-size: 14px;
+	margin-top: 100px;
+}
+
+#signout {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin:auto;
+	height:40px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+#add_comment_button {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#delete_image {
+	border: 1px solid #000;
+	border-radius: 5px;
+	width: 7% !important;
+}
+
+.iconButton {
+	border-color: transparent;
+}
+
+#comment_box button {
+	width: 5%;
+}
+
+.btn {
+	border-radius: 5px;
+	font-size: 14px;
+	background-color: orange;
+	border-color: red;
+}
+
+/*copied from lab3*/
+.btn:hover {
+  background: #3C3D3F;
+  color: #ffffff;
+}
+
+.garbageIcon {
+	background-image: url(../media/garbage2.png);
+	width: 30px;
+	height: 30px;
+	background-position: center;
+	border-color: transparent;
+}

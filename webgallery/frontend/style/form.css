@@ -1,0 +1,37 @@
+form {
+	margin-top: 20px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	border-color: #c9ad02;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.form_title {
+	font-size: 20px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+.form_content {
+	font-size: 20px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.form_item {
+	font-size: 15px;
+	margin:1% 5% 1% 5%;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+#comment_comment {
+	height: 100px;
+}

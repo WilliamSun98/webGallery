@@ -1,0 +1,35 @@
+#image_gallery {
+	margin-top: 20px;
+	border: 2px solid #000;
+	display: flex;
+	justify-content: flex_start;
+	flex-direction: row;
+	height: 200px;
+}
+
+#image_gallery button {
+	width: 5%;
+	background-color: orange;
+}
+
+#image_gallery .main_container {
+	width: 90%;
+	display: flex;
+	justify-content: flex-start;;
+	flex-direction: column;
+}
+
+.extra_info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.extra_info button {
+	width: 10%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 90%;
+}

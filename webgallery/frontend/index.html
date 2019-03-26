@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Gallery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/form.css">
+	<link rel="stylesheet" type="text/css" href="style/button.css">
+	<link rel="stylesheet" type="text/css" href="style/table.css">
+	<link rel="stylesheet" type="text/css" href="style/gallery.css">
+</head>
+<body>
+	<header>Web Gallery</header>
+
+	<form class="log_in_form form" id="log_in_form">
+		<div class="form_title"></div>
+		<div class="form_content">
+			<p id="error_box"></p>
+			<input id="sign_in_name" type="text" name="username" class="form_item" placeholder="Enter a username" required/>
+			<input id="sign_in_password" type="password" name="password" class="form_item" placeholder="Enter a password" required/>
+			<div>
+				<button id="signin" name="action" class="btn" type="submit">Sign in</button>
+				or <button id="signup" name="action" class="btn" type="submit">Sign up</button>
+			</div>
+		</div>
+	</form>
+
+
+	<div class="hide_element" id="all_items">
+		<button class="btn" id="signout">
+			SignOut
+		</button>
+
+		<form class="form" id="gallery_selector">
+			<label id="selector">Select user
+				<select id="image_author"></select>
+				<button class="btn" id="change_gallery">Change to his gallery</button>
+			</label>
+		</form>
+
+		<button id="toggle_button" class="btn">
+			Show/Hide Image form
+		</button>
+
+		<div id="image_info_form"></div>
+
+		<div id="gallery"></div>
+
+		<form id="add_comment_form" class="hide_element">
+			<div class="form_title">Enter your Comment Information</div>
+			<div class="form_content">
+				<textarea class="form_item" id="comment_comment" name="content"
+						  placeholder="Enter your Comment here" required></textarea>
+				<button type="submit" class="btn" id="add_comment_button">Add a comment</button>
+			</div>
+		</form>
+
+		<div id="comment_box" class="hide_element">
+			<button class="change_page_button btn" id="previous_comment_page">&lt;&lt;</button>
+			<div class="main_container" id="comment_container">
+				<div id="comment_title">
+					<div class="comment_author">Author</div>
+					<div class="comment_text">Text</div>
+					<div class="comment_date">Date</div>
+				</div>
+				<div id="comment_content"></div>
+			</div>
+			<button class="change_page_button btn" id="next_comment_page">>></button>
+		</div>
+
+		<footer>
+			<a href='/credits.html'>credits</a>
+		</footer>
+	</div>
+
+
+
+	<script src="js/api.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
